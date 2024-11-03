@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 1rem;
+}
+body{
+    width: 100%;
+    height: 100%;
+    background-color: antiquewhite;
+}
+h1{
+    color: tomato;
+}
+.slider{
+    position: relative;
+    max-width: 45rem;
+    height: 25rem;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.slide{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.bottom-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 50px;
+    margin-top: 30px;
+}
+.bottom-container button{
+    padding: 10px 30px;
+    background-color: cornflowerblue;
+    color: white;
+    border: none;
+    font-size: 18px;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+.dots-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.dots-container .dot{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgb(211, 194, 194);
+    cursor: pointer;
+}
+.dots-container .dot.active{
+    background-color: rgb(65, 60, 60);
+}
